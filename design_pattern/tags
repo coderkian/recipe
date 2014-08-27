@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=g++$/;"	m
+FigureFactory	factory.hpp	/^class FigureFactory {$/;"	c
+FigureFactory	factory.hpp	/^class RecFactory::public FigureFactory {$/;"	c	class:RecFactory
+FigureFactory	factory.hpp	/^class RoundFactory::public FigureFactory {$/;"	c	class:RoundFactory
+FigureFactory	factory.hpp	/^class TriFactory::public FigureFactory {$/;"	c	class:TriFactory
+MAKE	Makefile	/^MAKE=make$/;"	m
+MASKFACTORY_HPP	factory.hpp	2;"	d
+MASK_HPP	mask.hpp	2;"	d
+MaskFigure	mask.cpp	/^MaskFigure::MaskFigure() {$/;"	f	class:MaskFigure
+MaskFigure	mask.hpp	/^class MaskFigure{$/;"	c
+MaskFigure	mask.hpp	/^class MaskRec::public MaskFigure {$/;"	c	class:MaskRec
+MaskFigure	mask.hpp	/^class MaskRound::public MaskFigure {$/;"	c	class:MaskRound
+MaskFigure	mask.hpp	/^class MaskTri::public MaskFigure {$/;"	c	class:MaskTri
+MaskRec	mask.cpp	/^MaskRec::MaskRec() {$/;"	f	class:MaskRec
+MaskRound	mask.cpp	/^MaskRound::MaskRound() {$/;"	f	class:MaskRound
+MaskTri	mask.cpp	/^MaskTri::MaskTri() {$/;"	f	class:MaskTri
+OBJS	Makefile	/^OBJS=$(SRCS:%.cpp=%.o)$/;"	m
+RM	Makefile	/^RM = -rm -rf$/;"	m
+SRCS	Makefile	/^SRCS=$(wildcard *.cpp)$/;"	m
+TARGET	Makefile	/^TARGET=main$/;"	m
+cout	factory.cpp	/^use std::cout;$/;"	m	class:std	file:
+~MaskFigure	mask.cpp	/^MaskFigure::~MaskFigure() {$/;"	f	class:MaskFigure
