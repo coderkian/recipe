@@ -5,7 +5,7 @@ using std::cout;
 using std::endl;
 
 MaskFigure::MaskFigure() {
-
+  cout<<"init MaskFigure"<<endl;
 }
 
 MaskFigure::MaskFigure(const MaskFigure& mf) {
@@ -13,7 +13,7 @@ MaskFigure::MaskFigure(const MaskFigure& mf) {
 }
 
 MaskFigure::~MaskFigure() {
-
+  cout<<"delete MaskFigure"<<endl;
 }
 
 MaskRound::MaskRound() {
@@ -29,7 +29,7 @@ MaskRound* MaskRound::clone() {
 }
 
 MaskRound::~MaskRound() {
-
+  cout<<"delete MaskRound"<<endl;
 }
 
 MaskRec::MaskRec() {
@@ -45,7 +45,7 @@ MaskRec* MaskRec::clone() {
 }
 
 MaskRec::~MaskRec() {
-
+  cout<<"delete MaskRec"<<endl;
 }
 
 MaskTri::MaskTri() {
@@ -61,5 +61,5 @@ MaskTri* MaskTri::clone() {
 }
 
 MaskTri::~MaskTri() {
-
+  cout<<"delete MaskTri"<<endl;
 }
