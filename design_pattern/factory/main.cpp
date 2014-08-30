@@ -1,32 +1,25 @@
+#include <memory>
 #include <iostream>
 #include "factory.hpp"
 #include "factorytml.hpp"
 
+using std::shared_ptr;
+
 
 int main() {
-  RoundFactory *rf = new RoundFactory();
-  MaskFigure *mf1 = rf->CreateFigure();
+  shared_ptr<RoundFactory> roundfac(new RoundFactory());
+  shared_ptr<MaskRound>    mrd(roundfac->CreateFigure());
 
-  RecFactory *ref = new RecFactory();
-  MaskFigure *mf2 = ref->CreateFigure();
+  shared_ptr<RecFactory> recfac(new RecFactory());
+  shared_ptr<MaskRec>    mrc(recfac->CreateFigure());
 
-  TriFactory *tf = new TriFactory();
-  MaskFigure *mf3 = tf->CreateFigure();
+  shared_ptr<TriFactory> trifac(new TriFactory());
+  shared_ptr<MaskTri>    mti(trifac->CreateFigure());
 
-  FigureFactoryTml *fft = new FigureFactoryTml();
-  MaskFigure *mf4= fft->CreateFigure<MaskRound>();
-  MaskFigure *mf5= fft->CreateFigure<MaskRec>();
-  MaskFigure *mf6= fft->CreateFigure<MaskTri>();
+  shared_ptr<FigureFactoryTml>  fft(new FigureFactoryTml());
+  shared_ptr<MaskRound>         mrdp(fft->CreateFigure<MaskRound>());
+  shared_ptr<MaskRec>           mrcp(fft->CreateFigure<MaskRec>());
+  shared_ptr<MaskTri>           mtip(fft->CreateFigure<MaskTri>());
 
-  delete mf1;
-  delete mf2;
-  delete mf3;
-  delete mf4;
-  delete mf5;
-  delete mf6;
-  delete rf;
-  delete ref;
-  delete tf;
-  delete fft;
   return 0;
 }

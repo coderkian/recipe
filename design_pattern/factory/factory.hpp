@@ -15,21 +15,21 @@ class RoundFactory:public FigureFactory {
  public:
   RoundFactory();
   ~RoundFactory();
-  MaskFigure* CreateFigure();
+  MaskRound* CreateFigure();
 };
 
 class RecFactory:public FigureFactory {
  public:
   RecFactory();
   ~RecFactory();
-  MaskFigure* CreateFigure();
+  MaskRec* CreateFigure();
 };
 
 class TriFactory:public FigureFactory {
  public:
   TriFactory();
   ~TriFactory();
-  MaskFigure* CreateFigure();
+  MaskTri* CreateFigure();
 };
 
 #endif

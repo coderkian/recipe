@@ -20,7 +20,7 @@ RoundFactory::~RoundFactory() {
 
 }
 
-MaskFigure* RoundFactory::CreateFigure() {
+MaskRound* RoundFactory::CreateFigure() {
   return new MaskRound();
 }
 
@@ -32,7 +32,7 @@ RecFactory::~RecFactory() {
 
 }
 
-MaskFigure* RecFactory::CreateFigure() {
+MaskRec* RecFactory::CreateFigure() {
   return new MaskRec();
 }
 
@@ -44,7 +44,7 @@ TriFactory::~TriFactory() {
 
 }
 
-MaskFigure* TriFactory::CreateFigure() {
+MaskTri* TriFactory::CreateFigure() {
   return new MaskTri();
 }
 

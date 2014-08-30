@@ -1,6 +1,8 @@
 #ifndef MASK_HPP
 #define MASK_HPP
 
+#include <stdio.h>
+
 class MaskFigure{
   public:
     virtual ~MaskFigure()=0;
