@@ -12,7 +12,7 @@ class FigureFactoryTml {
   ~FigureFactoryTml(){ }
 
   template<typename T>
-  MaskFigure* CreateFigure() {
+  T* CreateFigure() {
     return new T();
   }
 };
