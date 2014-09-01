@@ -1,8 +1,8 @@
-#ifndef MASKFACTORY_HPP
-#define MASKFACTORY_HPP
+#ifndef ABSTRACT_MASKFACTORY_HPP
+#define ABSTRACT_MASKFACTORY_HPP
 
-#include "maskA.hpp"
 #include "maskB.hpp"
+#include "maskA.hpp"
 
 class FigureFactory {
  public:

@@ -1,5 +1,5 @@
-#ifndef MASK_HPP
-#define MASK_HPP
+#ifndef MASKB_HPP
+#define MASKB_HPP
 
 class MaskBFigure{
   public:

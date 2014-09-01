@@ -36,6 +36,10 @@ RecFactory::~RecFactory() {
 
 }
 
+MaskARec* RecFactory::CreateFigureA() {
+  return new MaskARec();
+}
+
 MaskBRec* RecFactory::CreateFigureB() {
   return new MaskBRec();
 }
@@ -46,6 +50,10 @@ TriFactory::TriFactory() {
 
 TriFactory::~TriFactory() {
 
+}
+
+MaskATri* TriFactory::CreateFigureA() {
+  return new MaskATri();
 }
 
 MaskBTri* TriFactory::CreateFigureB() {
