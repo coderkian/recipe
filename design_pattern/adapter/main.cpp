@@ -1,6 +1,12 @@
 #include "adapter.hpp"
 
 int main() {
-  Adapter a;
-  a.Request();
+#if 0
+  Adapter apr;
+  apr.Request();
+#else 
+  Adaptee adp;
+  Adapter apr(&adp);
+  apr.Request();
+#endif
 }

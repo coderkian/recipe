@@ -15,11 +15,25 @@ class Target{
     virtual void Request() const=0;
 };
 
+#if 0
 class Adapter:public Target, private Adaptee{
   public:
     void Request() const{
       Adaptee::SpecialRequest();
     }
 };
+#else
+class Adapter:public Target{
+  public:
+    Adapter(Adaptee *_adp){
+      adaptee = _adp;
+    }
+    void Request() const{
+      adaptee->SpecialRequest();
+    }
+  private:
+    Adaptee *adaptee;
+};
+#endif
 
 #endif
